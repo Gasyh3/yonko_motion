@@ -5,7 +5,7 @@ Fichiers livrés dans `renders/` :
 | Fichier | Usage |
 | --- | --- |
 | `orbite-scrub.mp4` | H.264 1920×1080, ~26 Mo, une image-clé toutes les 10 images (0,33 s) — défilement fluide au scroll (Safari, Chrome, Firefox) |
-| `orbite-scrub.webm` | VP9 1920×1080, même principe, pour Chrome/Firefox |
+| `orbite-scrub.webm` | VP9 1920×1080, ~17 Mo, une image-clé par seconde — pour Chrome/Firefox (le MP4 reste la référence, plus réactif au scrub) |
 | `orbite-poster.jpg` | Première image, à afficher pendant le chargement |
 | `orbite-mobile.mp4` | H.264 1280×720, ~13 Mo, pour mobile |
 | `orbite-preview.jpg` | Planche d'aperçu : une image au milieu de chaque section |
