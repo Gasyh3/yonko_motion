@@ -3,3 +3,5 @@ renders/orbite-master.mp4
 renders/work-*/
 renders/.*transaction*/
 .hyperframes/
+renders/frames/
+renders/dump-all.sh
