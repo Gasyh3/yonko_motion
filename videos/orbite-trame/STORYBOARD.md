@@ -30,7 +30,7 @@ mode: collaborative
 - motion: lente montée en grue au-dessus de l'horizon (crane up), le soleil se dégage du limbe
 - text_zone: haut-gauche
 - tint: #3fb5c9
-- status: outline
+- status: animated
 - src: index.html
 
 ## Frame 2 — Station orbitale en anneau
@@ -42,7 +42,7 @@ mode: collaborative
 - motion: arc orbital autour de la station (la caméra tourne autour, la roue tourne en sens inverse)
 - text_zone: gauche (station à droite)
 - tint: #e8e2d6 + #ffb35c
-- status: outline
+- status: animated
 - src: index.html
 
 ## Frame 3 — Géante gazeuse à anneaux
@@ -54,7 +54,7 @@ mode: collaborative
 - motion: la caméra plonge sous le plan des anneaux avec un léger roulis (bank)
 - text_zone: droite (planète à gauche)
 - tint: #d99a4e
-- status: outline
+- status: animated
 - src: index.html
 
 ## Frame 4 — Ceinture d'astéroïdes et lune de glace
@@ -66,7 +66,7 @@ mode: collaborative
 - motion: travelling latéral (truck) à travers la ceinture, fort parallaxe
 - text_zone: gauche (lune à droite, astéroïdes en bordure)
 - tint: #a9d6ef
-- status: outline
+- status: animated
 - src: index.html
 
 ## Frame 5 — Station solaire devant une nébuleuse
@@ -78,7 +78,7 @@ mode: collaborative
 - motion: dolly parallèle le long de la structure, en contre-plongée
 - text_zone: haut (structure en diagonale basse)
 - tint: #39c2a7 + #e0688f
-- status: outline
+- status: animated
 - src: index.html
 
 ## Frame 6 — Planète rouge et sa lune
@@ -90,7 +90,7 @@ mode: collaborative
 - motion: approche frontale qui ralentit (push-in), la lune passe devant
 - text_zone: droite (planète à gauche-bas)
 - tint: #c4532f
-- status: outline
+- status: animated
 - src: index.html
 
 ## Frame 7 — Arrivée : éclipse
@@ -102,5 +102,5 @@ mode: collaborative
 - motion: la caméra s'aligne et se pose, l'anneau se complète ; dernière frame tenue
 - text_zone: centre (sous l'éclipse) — idéal footer / contact
 - tint: #ffc46b
-- status: outline
+- status: animated
 - src: index.html

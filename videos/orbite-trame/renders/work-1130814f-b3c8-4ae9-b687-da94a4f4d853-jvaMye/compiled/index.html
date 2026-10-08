@@ -1,8 +1,30 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="fr">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=1920, height=1080" />
+  <head><script data-hf-after-fonts-fallback="">document.addEventListener("DOMContentLoaded", function () {
+  if (window.__hfAfterFontsClaimed) return;
+  var T = "text/hf-after-fonts";
+  var all = [].slice.call(document.querySelectorAll('script[type="text/hf-after-fonts"], script[type="text/hf-after-fonts+module"]'));
+  if (!all.length) return;
+  console.warn("[hyperframes] the runtime has no web-font gate; composition scripts run without waiting for fonts");
+  var late = function (el) { return el.type !== T || el.matches('[defer][src], [defer][data-hf-inlined-src]'); };
+  var queue = all.filter(function (el) { return !late(el); }).concat(all.filter(late));
+  (function next() {
+    var el = queue.shift();
+    if (!el) return;
+    var s = document.createElement("script");
+    for (var i = 0; i < el.attributes.length; i++) s.setAttribute(el.attributes[i].name, el.attributes[i].value);
+    if (el.type === T) s.removeAttribute("type"); else s.type = "module";
+    s.async = el.hasAttribute("async");
+    s.text = el.text;
+    var waits = s.type !== "module" && s.hasAttribute("src") && !s.async && !s.noModule;
+    if (waits) { s.addEventListener("load", next); s.addEventListener("error", next); }
+    el.replaceWith(s);
+    if (!waits) next();
+  })();
+});
+//# sourceURL=hyperframes://after-fonts-fallback</script><style data-hyperframes-text-rendering="true">html,body,*{text-rendering:geometricPrecision}</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1920, height=1080">
     <title>Orbite — trame de fond</title>
     <style>
       * {
@@ -34,16 +56,8 @@
     </style>
   </head>
   <body>
-    <div
-      id="root"
-      data-composition-id="main"
-      data-no-timeline
-      data-start="0"
-      data-duration="46"
-      data-width="1920"
-      data-height="1080"
-    >
-      <canvas id="space" class="clip" data-layout-allow-overflow data-start="0" data-duration="46" data-track-index="0"></canvas>
+    <div id="root" data-composition-id="main" data-no-timeline="" data-start="0" data-duration="46" data-width="1920" data-height="1080">
+      <canvas id="space" class="clip" data-layout-allow-overflow="" data-start="0" data-duration="46" data-track-index="0"></canvas>
     </div>
 
     <script type="importmap">
@@ -53,7 +67,7 @@
         }
       }
     </script>
-    <script type="module">
+    <script type="text/hf-after-fonts+module">
       import * as THREE from "three";
 
       // ───────────────────────── Canvas & timing ─────────────────────────
@@ -1153,6 +1167,7 @@
         renderer.compile(scene, camera);
         renderAt(window.__hfThreeTime || 0);
       })();
-    </script>
+    
+//# sourceURL=hyperframes-composition://body</script>
   </body>
 </html>

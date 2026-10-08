@@ -1,0 +1,13 @@
+{
+  "video": { "duration": 46, "fps": 30, "width": 1920, "height": 1080 },
+  "note": "Times in seconds. transit = the camera flies to the stop; hold = slow camera move, show the section's content here.",
+  "sections": [
+    { "index": 1, "id": "hero",       "subject": "Lever de planète océan",          "transit": null,     "hold": [0, 10],  "textZone": "top-left" },
+    { "index": 2, "id": "station",    "subject": "Station orbitale en anneau",      "transit": [10, 12], "hold": [12, 16], "textZone": "left" },
+    { "index": 3, "id": "gas-giant",  "subject": "Géante gazeuse à anneaux",        "transit": [16, 18], "hold": [18, 22], "textZone": "right" },
+    { "index": 4, "id": "belt",       "subject": "Ceinture d'astéroïdes, lune de glace", "transit": [22, 24], "hold": [24, 28], "textZone": "left" },
+    { "index": 5, "id": "solar",      "subject": "Station solaire devant une nébuleuse", "transit": [28, 30], "hold": [30, 34], "textZone": "top-left" },
+    { "index": 6, "id": "red-planet", "subject": "Planète rouge et sa lune",        "transit": [34, 36], "hold": [36, 40], "textZone": "right" },
+    { "index": 7, "id": "eclipse",    "subject": "Éclipse (arrivée)",               "transit": [40, 42], "hold": [42, 46], "textZone": "bottom-center" }
+  ]
+}
